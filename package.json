@@ -1,0 +1,45 @@
+{
+  "name": "r3-quantitative-finance",
+  "version": "1.0.0",
+  "description": "Production-grade deterministic quantitative finance framework using WAD-18 fixed-point arithmetic",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-node test/runAllTests.ts",
+    "verify": "ts-node verification/verify.ts",
+    "benchmark": "ts-node benchmarks/performanceBenchmark.ts",
+    "dev": "ts-node verification/runCapsule.ts",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"**/*.{ts,json,md}\""
+  },
+  "keywords": [
+    "quantitative-finance",
+    "derivatives",
+    "risk-modeling",
+    "fixed-point",
+    "deterministic",
+    "black-scholes",
+    "var",
+    "monte-carlo",
+    "reproducible",
+    "WAD-18"
+  ],
+  "author": "R3 Finance Team",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.1.3",
+    "ts-node": "^10.9.1",
+    "eslint": "^8.42.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.7",
+    "@typescript-eslint/parser": "^5.59.7",
+    "prettier": "^2.8.8"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
